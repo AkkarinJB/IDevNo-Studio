@@ -1,0 +1,30 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container">
+        <a class="navbar-brand fs-2"routerLink="/">IDevNo <span class="text-primary">Studio</span></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li>
+                    <a class="nav-link me-3" routerLink="/home">HOME</a>
+                </li>
+                <li>
+                    <a class="nav-link me-3" routerLink="/blog">BLOGS</a>
+                </li>
+                <li>
+                    <a class="nav-link me-3" routerLink="/api">API</a>
+                </li>
+                <li>
+                    <a class="nav-link me-3" routerLink="/about">ABOUT ME</a>
+                </li>
+                <li [hidden]="true">
+                    <a class="nav-link me-3" routerLink="/login">Login</a>
+                </li>
+                <li [hidden]="true">
+                    <a class="nav-link me-3" routerLink="/register">Register</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
